@@ -71,7 +71,7 @@ var Compiler = function(grunt, options, cwd, expanded) {
       return true;
     });
 
-    var script = "  'use strict';" + grunt.util.linefeed;
+    var script = grunt.util.linefeed;
 
     script += paths
       .map(this.load)
